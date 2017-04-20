@@ -1,0 +1,29 @@
+{
+  "name": "rpi_yt_streamer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstevee/streampi.git"
+  },
+  "keywords": [
+    "stream",
+    "rpi"
+  ],
+  "author": "Maximilian Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstevee/streampi/issues"
+  },
+  "homepage": "https://github.com/mstevee/streampi#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "globals": "^9.17.0",
+    "http": "0.0.0",
+    "socket.io": "^1.7.3"
+  }
+}
