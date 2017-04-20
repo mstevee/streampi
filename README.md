@@ -4,4 +4,4 @@ npm install
 # start
 npm start
 # access
-http://<IP of your PI>:3000
+http://IP of your PI:3000
