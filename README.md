@@ -1,6 +1,7 @@
 # streampi
 # Install
 npm install
+You need to change the YTLink in the stream1.sh
 # start
 npm start
 # access
