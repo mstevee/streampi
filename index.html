@@ -1,0 +1,17 @@
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  $(function () {
+    var socket = io();
+$( "#start" ).bind( "click", function() {
+	socket.emit("startstream");
+});
+$( "#stop" ).bind( "click", function() {
+        socket.emit("stopstream");
+});
+  });
+</script>
+<button id="start">start stream</button>
+<button id="stop">stop stream</button>
+

@@ -1,0 +1,1 @@
+raspivid -ex fixedfps -br 55 -h 720 -w 1280  -awb off -awbg 1.78,1.79  -o - -t 0 -vf -hf -fps 25 -b 1600000 | ffmpeg  -itsoffset 1  -ar 11025 -ac 1 -acodec pcm_s16le -f s16le  -i /dev/zero  -i - -vcodec copy  -b 2M -maxrate 2M -minrate 2M -bufsize 1M -g 60 -r 25 -strict experimental -f flv rtmp://a.rtmp.youtube.com/live2/
